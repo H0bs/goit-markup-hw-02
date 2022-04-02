@@ -1,0 +1,176 @@
+
+/*Колір основного тексту #212121
+Колір параграфів контактів #757575
+колір лого #000000
+колір на чорному фоні #000000
+інтерактивний синій #2196F3
+адрес у футері rgba(255, 255, 255, 0.6) */
+:root{
+--primary-text-color: #212121;
+--text-color: #757575;
+--accent-color: #2196F3;
+}
+.body {
+    background-color: #ffffff;
+    color: var(--primary-text-color);
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+/* Головна сторінка*/
+/* Верхня лінія*/
+.logo{
+    color: #000000;
+    font-family: raleway, sans-serif;
+    text-decoration: none;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.logo span{
+    color: var(--accent-color);
+}
+.link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.link:hover,
+.link:focus{
+    color: var(--accent-color);
+}
+.site-nav .link.current{
+    color: var(--accent-color);
+}
+.adress .link{
+    color: var(--text-color);
+}
+.adress .link:hover,
+.adress .link:focus{
+    color: var(--accent-color);
+}
+
+/* Голова */
+.head {
+    color: #ffffff;
+    background-color: #2F303A;
+}
+.head .title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.head .button{
+    color: #ffffff;
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+/*особливості*/
+.specifics .tittle{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.specifics p{
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/*чим займаємось*/
+.work .tittle{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/*наша команда*/
+.team {
+    background-color: #F5F4FA;
+}
+.team-tittle{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.team .list-item{
+    background-color: #ffffff;
+}
+.team .list-tittle{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+.team p {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+/*Сторінка портфоліо*/
+/* Колір кнопок фільтра #F5F4FA */
+
+.filter-list .button{
+    background-color: #F5F4FA;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+     text-align: center;
+}
+.filter-list .button:hover{
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+.project-list .tittle{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.project-list p{
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+/*підвал*/
+.footer {
+    background-color: #2F303A;
+    color: #ffffff;
+}
+.footer .logo{
+    color: #ffffff;
+    }
+    
+address {
+    font-style: normal;
+}
+.footer .link{
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer .link:hover,
+.footer .link:focus {
+    color: var(--accent-color);
+}
+.footer p,
+.footer .link {
+    font-size: 14px;
+    line-height: 1.71;
+}
