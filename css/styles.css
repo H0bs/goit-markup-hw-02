@@ -2,25 +2,38 @@
 /*Колір основного тексту #212121
 Колір параграфів контактів #757575
 колір лого #000000
-колір на чорному фоні #000000
 інтерактивний синій #2196F3
-адрес у футері rgba(255, 255, 255, 0.6) */
+Колір кнопок фільтра #F5F4FA
+адреса у футері rgba(255, 255, 255, 0.6) */
 :root{
 --primary-text-color: #212121;
 --text-color: #757575;
+--secondary-text-color: #FFFFFF;
+--primary-bg-color: #FFFFFF;
 --accent-color: #2196F3;
+--logo-color: #000000;
+--hero-bg-color: #2F303A;
+--team-bg-color: #F5F4FA;
+--footer-bg-color: #2F303A;
+--footer-contacts-color: rgba(255, 255, 255, 0.6);
+--button-color: #F5F4FA;
+
 }
-.body {
-    background-color: #ffffff;
+body {
+    background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
     font-family: roboto, sans-serif;
+    font-weight: normal;
     letter-spacing: 0.03em;
+}
+ul{
+    list-style: none;
 }
 
 /* Головна сторінка*/
 /* Верхня лінія*/
 .logo{
-    color: #000000;
+    color: var(--logo-color);
     font-family: raleway, sans-serif;
     text-decoration: none;
 
@@ -31,33 +44,37 @@
 .logo span{
     color: var(--accent-color);
 }
-.link{
+.nav-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.current{
+    color: var(--accent-color);
+}
+.contacts-link{
+    color: var(--text-color);
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.link:hover,
-.link:focus{
-    color: var(--accent-color);
-}
-.site-nav .link.current{
-    color: var(--accent-color);
-}
-.adress .link{
-    color: var(--text-color);
-}
-.adress .link:hover,
-.adress .link:focus{
+.contacts-link:hover,
+.contacts-link:focus{
     color: var(--accent-color);
 }
 
-/* Голова */
-.head {
-    color: #ffffff;
-    background-color: #2F303A;
+/* Герой */
+.hero {
+    color: var(--secondary-text-color);
+    background-color: var(--hero-bg-color);
 }
-.head .title{
+.hero .title{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -65,8 +82,8 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.head .button{
-    color: #ffffff;
+.hero .button{
+    color: var(--secondary-text-color);
     background-color: var(--accent-color);
     font-weight: 700;
     font-size: 16px;
@@ -79,7 +96,7 @@
 }
 
 /*особливості*/
-.specifics .tittle{
+.specifics .title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -91,7 +108,7 @@
 }
 
 /*чим займаємось*/
-.work .tittle{
+.work .title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -100,18 +117,18 @@
 
 /*наша команда*/
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--team-bg-color);
 }
-.team-tittle{
+.team-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
-.team .list-item{
-    background-color: #ffffff;
+.team-item{
+    background-color: var(--primary-bg-color);
 }
-.team .list-tittle{
+.team .list-title{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -125,10 +142,10 @@
 }
 
 /*Сторінка портфоліо*/
-/* Колір кнопок фільтра #F5F4FA */
+
 
 .filter-list .button{
-    background-color: #F5F4FA;
+    background-color: var(--button-color);
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -138,9 +155,9 @@
 }
 .filter-list .button:hover{
     background-color: var(--accent-color);
-    color: #ffffff;
+    color: var(--secondary-text-color);
 }
-.project-list .tittle{
+.project-list .title{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -154,25 +171,29 @@
 
 /*підвал*/
 .footer {
-    background-color: #2F303A;
-    color: #ffffff;
+    background-color: var(--footer-bg-color);
 }
 .footer .logo{
-    color: #ffffff;
+    color: var(--secondary-text-color);
     }
-    
-address {
+.address{
     font-style: normal;
-}
-.footer .link{
-    color: rgba(255, 255, 255, 0.6);
-}
-.footer .link:hover,
-.footer .link:focus {
-    color: var(--accent-color);
-}
-.footer p,
-.footer .link {
+}    
+.map-link {
+    color: var(--secondary-text-color);
+    text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
+}
+.mail-link,
+.tel-link{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--footer-contacts-color);
+}
+.map-link:hover,
+.mail-link:hover,
+.tel-link:hover {
+    color: var(--accent-color);
 }
