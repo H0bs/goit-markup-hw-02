@@ -8,8 +8,7 @@
 :root{
 --primary-text-color: #212121;
 --text-color: #757575;
---secondary-text-color: #FFFFFF;
---primary-bg-color: #FFFFFF;
+--secondary-color: #FFFFFF;
 --accent-color: #2196F3;
 --logo-color: #000000;
 --hero-bg-color: #2F303A;
@@ -20,7 +19,7 @@
 
 }
 body {
-    background-color: var(--primary-bg-color);
+    background-color: var(--secondary-color);
     color: var(--primary-text-color);
     font-family: roboto, sans-serif;
     font-weight: normal;
@@ -36,7 +35,6 @@ ul{
     color: var(--logo-color);
     font-family: raleway, sans-serif;
     text-decoration: none;
-
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -71,7 +69,7 @@ ul{
 
 /* Герой */
 .hero {
-    color: var(--secondary-text-color);
+    color: var(--secondary-color);
     background-color: var(--hero-bg-color);
 }
 .hero .title{
@@ -83,14 +81,11 @@ ul{
     text-transform: uppercase;
 }
 .hero .button{
-    color: var(--secondary-text-color);
+    color: var(--secondary-color);
     background-color: var(--accent-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
 }
@@ -103,6 +98,7 @@ ul{
     text-transform: uppercase;
 }
 .specifics p{
+    color: var(--text-color);
     font-size: 14px;
     line-height: 1.71;
 }
@@ -126,7 +122,7 @@ ul{
     text-align: center;
 }
 .team-item{
-    background-color: var(--primary-bg-color);
+    background-color: var(--secondary-color);
 }
 .team .list-title{
     font-weight: 500;
@@ -146,7 +142,7 @@ ul{
 
 .filter-list .button{
     background-color: var(--button-color);
-    color: var(--primary-text-color);
+    color: var(--primary-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -155,7 +151,7 @@ ul{
 }
 .filter-list .button:hover{
     background-color: var(--accent-color);
-    color: var(--secondary-text-color);
+    color: var(--secondary-color);
 }
 .project-list .title{
     font-weight: 700;
@@ -174,13 +170,13 @@ ul{
     background-color: var(--footer-bg-color);
 }
 .footer .logo{
-    color: var(--secondary-text-color);
+    color: var(--secondary-color);
     }
-.address{
+address{
     font-style: normal;
 }    
 .map-link {
-    color: var(--secondary-text-color);
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
